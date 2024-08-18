@@ -10,7 +10,7 @@ const app = express();
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use((req, res, next) => {
-    const allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
+    const allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com','http://localhost:3000'];
     const origin = req.headers.origin || '*';
     if(!process.env.XORIG_RESTRICT || allowedOrigins.indexOf(origin) > -1){
          console.log(origin);
