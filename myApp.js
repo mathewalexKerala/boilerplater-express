@@ -9,7 +9,9 @@ app.get('/',function (req,res){
 
 })
 
-
+app.get('/json',function(){
+     arguments[1].json({message:"Hello json"})
+})
 
 
 
