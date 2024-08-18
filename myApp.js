@@ -11,7 +11,8 @@ app.get('/',function (req,res){
 })
 
 app.get('/json',function(){
-     arguments[1].json({message:process.env.MESSAGE_STYLE})
+     
+     arguments[1].json({"message":process.env.MESSAGE_STYLE})
 })
 
 
