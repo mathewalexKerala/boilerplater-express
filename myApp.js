@@ -1,5 +1,7 @@
 let express = require('express');
 let app = express();
+app.use('/public',express.static(__dirname+'/public'))
+
 
 app.get('/',function (req,res){
    
@@ -10,7 +12,7 @@ app.get('/',function (req,res){
 
 
 
-app.use('/public',express.static(__dirname+'/public'))
+
 
 
 
